@@ -50,7 +50,7 @@ runs:
         if [[ ! -z "$GITHUB_EVENT_INPUTS_VERSION" ]]; then
           version="$GITHUB_EVENT_INPUTS_VERSION"
 
-        elif [[ "${version}" =~ (master|main) && "$INPUTS_TYPE" =~ (supervisor|plugin|generic) ]]; then
+        elif [[ "${version}" =~ (master|main|next) && "$INPUTS_TYPE" =~ (supervisor|plugin|generic) ]]; then
           today="$(date --utc '+%Y-%m-%d')"
           midnight_timestamp="$(date --utc +%s --date=$today)"
           calver_date="$(date --utc --date=$today '+%Y.%m')"

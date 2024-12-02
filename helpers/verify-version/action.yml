@@ -32,7 +32,7 @@ runs:
 
         if [[ "$INPUTS_IGNORE_DEV" =~ true|True ]] && [ "${branch_version}" == "dev" ]; then
           exit 0
-        elif [[ "$INPUTS_IGNORE_MASTER" =~ true|True ]] && [ "${branch_version}" == "master" ]; then
+        elif [[ "$INPUTS_IGNORE_MASTER" =~ true|True ]] && [ "${branch_version}" == "next" ]; then
           exit 0
         elif [ "${setup_version}" != "${branch_version}" ]; then
           echo "Version of tag ${branch_version} don't match with ${setup_version}!"
