@@ -2,9 +2,9 @@ name: Test hassfest
 
 on:
   pull_request:
-    branches: ["master"]
+    branches: ["next"]
   push:
-    branches: ["master"]
+    branches: ["next"]
 
 jobs:
   hassfest:

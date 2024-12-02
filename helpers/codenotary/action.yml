@@ -23,7 +23,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: home-asst/actions/helpers/cas@master
+    - uses: home-asst/actions/helpers/cas@next
       with:
         version: ${{ inputs.version }}
 
